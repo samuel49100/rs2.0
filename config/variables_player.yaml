@@ -1,0 +1,15 @@
+#config_version=5
+
+player_vars:
+    jet_count:
+        initial_value: 0
+    loop_count:
+        initial_value: 0
+    bonus_multiplier:
+        initial_value: 1
+    sj_active:
+        value_type: int
+        initial_value: 0
+    sl_active:
+        value_type: int
+        initial_value: 0

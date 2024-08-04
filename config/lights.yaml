@@ -1,0 +1,131 @@
+#config_version=5
+
+lights:
+    l_salt_lake:
+        number: 11
+    l_los_angeles:
+        number: 21
+    l_san_francisco:
+        number: 31
+    l_bad_weather:
+        number: 41
+    l_monday:
+        number: 51
+    l_wednesday:
+        number: 61
+    l_bonus_6x:
+        number: 71
+    l_flying_rocks:
+        number: 81
+    l_denver:
+        number: 12
+    l_las_vegas:
+        number: 22
+    l_seattle:
+        number: 32
+    l_jet_at_max:
+        number: 42
+    l_spinner_at_max:
+        number: 52
+    l_tuesday:
+        number: 62
+    l_bonus_5x:
+        number: 72
+    l_flying_rocks_radio_riot:
+        number: 82
+    l_butte:
+        number: 13
+    l_albuquereque:
+        number: 23
+    l_left_special:
+        number: 33
+    l_radio:
+        number: 43
+    l_hiold_bonus:
+        number: 53
+    l_thursday:
+        number: 63
+    l_bonus_4x:
+        number: 73
+    l_flying_rocks_extraball:
+        number: 83
+    l_minnesota:
+        number: 14
+    l_dallas:
+        number: 24
+    l_shoot_here_left_loop:
+        number: 34
+    l_million_plus_wheel:
+        number: 44
+    l_light_extraball_wheel:
+        number: 54
+    l_friday:
+        number: 64
+    l_bonus_3x:
+        number: 74
+    l_left_bridge_out:
+        number: 84
+    l_kansas_city:
+        number: 15
+    l_new_orleans:
+        number: 25
+    l_shoot_again:
+        number: 35
+    l_big_millions:
+        number: 45
+    l_lunch_time:
+        number: 55
+    l_lock:
+        number: 65
+    l_bonus_2x:
+        number: 75
+    l_bobs_bunker:
+        number: 85
+    l_new_york_city:
+        number: 16
+    l_nashville:
+        number: 26
+    l_right_special:
+        number: 36
+    l_light_special:
+        number: 46
+    l_bobs_freebie:
+        number: 56
+    l_extraball:
+        number: 66
+    l_light_extraball_lower:
+        number: 76
+    l_right_bridge_out:
+        number: 86
+    l_ohio:
+        number: 17
+    l_atlanta:
+        number: 27
+    l_blasting_zone:
+        number: 37
+    l_light_blast:
+        number: 47
+    l_shoot_here_left_ramp:
+        number: 57
+    l_shoot_here_right_loop:
+        number: 67
+    l_start_city:
+        number: 77
+    l_buy_in_button:
+        number: 87
+    l_chicago:
+        number: 18
+    l_miami:
+        number: 28
+    l_shoot_here_right_ramp:
+        number: 38
+    l_flying_rocks:
+        number: 48
+    l_youre_here:
+        number: 58
+    l_light_bobs:
+        number: 68
+    l_million_plus_ramp:
+        number: 78
+    l_start_button:
+        number: 88

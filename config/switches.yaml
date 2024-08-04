@@ -1,0 +1,80 @@
+#config_version=5
+    
+switches:
+    s_flipper_left:
+        number: 10
+        tags: left_flipper
+    s_flipper_right:
+        number: 11
+        tags: right_flipper
+    s_flipper_upper:
+        number: 12
+        tags: upper_flipper
+    s_sling_left:
+        number: 13
+        tags: left_slingshot
+    s_slingshot_right:
+        number: 14
+        tags: right_slingshot
+    s_jet_left:
+        number: 15
+        tags: left_bumper
+    s_jet_right:
+        number: 16
+        tags: right_bumper
+    s_jet_down:
+        number: 17
+        tags: down_bumper
+    s_trough1:
+        number: 42
+        type: NC
+    s_trough2:
+        number: 43
+        type: NC
+    s_trough3:
+        number: 44
+        type: NC
+    s_trough4:
+        number: 45
+        type: NC
+    s_trough_jam:
+        number: 48
+        type: NC
+    s_plunger:
+        number: 49
+    s_start:
+        number: 50
+        tags: start
+    s_right_inlane:
+        number: 51
+        tags: playfield_active
+    s_left_inlane:
+        number: 52
+        tags: playfield_active
+    s_right_outlane:
+        number: 53
+        tags: playfield_active
+    s_left_outlane:
+        number: 54
+        tags: playfield_active
+    s_right_loop:
+        number: 55
+        tags: playfield_active
+    s_left_loop:
+        number: 56
+        tags: playfield_active
+    s_right_ramp_start:
+        number: 57
+        tags: playfield_active
+    s_left_ramp_start:
+        number: 58
+        tags: playfield_active
+    s_right_ramp_end:
+        number: 59
+        tags: playfield_active
+    s_left_ramp_end:
+        number: 60
+        tags: playfield_active
+    s_upper_loop:
+        number: 61
+        tags: playfield_active

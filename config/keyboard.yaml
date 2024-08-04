@@ -1,0 +1,52 @@
+#config_version=5
+
+keyboard:
+    '<':
+        switch: s_flipper_left
+    ':':
+        switch: s_flipper_right
+    q:
+        switch: s_flipper_upper
+    't':
+        switch: s_jet_left        
+    'y':
+        switch: s_jet_right
+    'g':
+        switch: s_jet_down
+    'e':
+        switch: s_sling_left
+    's':
+        switch: s_start
+    'd':
+        switch: s_right_outlane
+    'c':
+        switch: s_right_inlane
+    'b':
+        switch: s_left_inlane
+    'a':
+        switch: s_left_outlane
+    i:
+        switch: s_right_inlane
+    'm':
+        switch: s_slingshot_right
+    'f':
+        switch: s_left_loop
+    'h':
+        switch: s_right_loop
+    'j':
+        switch: s_upper_loop
+    p:
+        switch: s_plunger
+        toggle: true
+    1:
+        switch: s_trough1
+        toggle: true
+    2:
+        switch: s_trough2
+        toggle: true
+    3:
+        switch: s_trough3
+        toggle: true
+    4:
+        switch: s_trough4
+        toggle: true
