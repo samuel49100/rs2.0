@@ -1,0 +1,26 @@
+#show_version=5
+##! show: attract_light_show
+- duration: 1
+  lights:
+    l_left_outlane: 0
+    l_left_inlane: ff
+- duration: 1
+  lights:
+    l_left_inlane: 0
+    l_right_inlane: ff
+- duration: 1
+  lights:
+    l_right_inlane: 0
+    l_right_outlane: ff
+- duration: 1
+  lights:
+    l_right_outlane: 0
+    l_right_inlane: ff
+- duration: 1
+  lights:
+    l_right_inlane: 0
+    l_left_inlane: ff
+- duration: 1
+  lights:
+    l_left_inlane: 0
+    l_left_outlane: ff

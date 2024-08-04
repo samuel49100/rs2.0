@@ -1,0 +1,173 @@
+#config_version=5
+playfields:
+    playfield:
+        tags: default
+        default_source_device: bd_plunger
+    
+switches:
+    s_flipper_left:
+        number: 10
+        tags: left_flipper
+    s_flipper_right:
+        number: 11
+        tags: right_flipper
+    s_flipper_upper:
+        number: 12
+        tags: upper_flipper
+    s_sling_left:
+        number: 13
+        tags: left_slingshot
+    s_slingshot_right:
+        number: 14
+        tags: right_slingshot
+    s_jet_left:
+        number: 15
+        tags: left_bumper
+    s_jet_right:
+        number: 16
+        tags: right_bumper
+    s_jet_down:
+        number: 17
+        tags: down_bumper
+    s_trough1:
+        number: 42
+        type: NC
+    s_trough2:
+        number: 43
+        type: NC
+    s_trough3:
+        number: 44
+        type: NC
+    s_trough4:
+        number: 45
+        type: NC
+    s_trough_jam:
+        number: 48
+        type: NC
+    s_plunger:
+        number: 49
+    s_start:
+        number: 50
+        tags: start
+    s_right_inlane:
+        number: 51
+        tags: playfield_active
+    s_left_inlane:
+        number: 52
+        tags: playfield_active
+    s_right_outlane:
+        number: 53
+        tags: playfield_active
+    s_left_outlane:
+        number: 54
+        tags: playfield_active
+    s_right_loop:
+        number: 55
+        tags: playfield_active
+    s_left_loop:
+        number: 56
+        tags: playfield_active
+    s_right_ramp_start:
+        number: 57
+        tags: playfield_active
+    s_left_ramp_start:
+        number: 58
+        tags: playfield_active
+    s_right_ramp_end:
+        number: 59
+        tags: playfield_active
+    s_left_ramp_end:
+        number: 60
+        tags: playfield_active
+    s_upper_loop:
+        number: 61
+        tags: playfield_active
+lights:
+    l_right_inlane:
+        number: 1
+    l_right_outlane:
+        number: 2
+    l_left_inlane:
+        number: 3
+    l_left_outlane:
+        number: 4
+    l_right_loop:
+        number: 5
+    l_right_ramp:
+        number: 6
+    l_left_ramp:
+        number: 7
+    l_left_loop:
+        number: 8
+    l_upper_loop:
+        number: 9
+    l_main_scope:
+        number: 10
+    l_super_jets:
+        number: 11
+coils:
+    c_flipper_left_main:
+        number: 1
+        default_pulse_ms: 20
+    c_flipper_left_hold:
+        number: 2    
+        allow_enable: true
+    c_flipper_right_main:
+        number: 3
+        default_pulse_ms: 20
+    c_flipper_right_hold:
+        number: 4
+        allow_enable: true
+    c_flipper_upper_main:
+        number: 5
+        default_pulse_ms: 20
+    c_flipper_upper_hold:
+        number: 6    
+        allow_enable: true        
+    c_sling_left:
+        number: 7
+    c_slingshot_right:
+        number: 8
+    c_jet_left:
+        number: 31
+    c_jet_right:
+        number: 32
+    c_jet_down:
+        number: 33
+    c_trough_eject:
+        number: 41
+        default_pulse_ms: 20
+
+autofire_coils:
+    slingshot_left:
+        coil: c_sling_left
+        switch: s_sling_left
+    slingshot_right:
+        coil: c_slingshot_right
+        switch: s_slingshot_right  
+    jet_left:
+        coil: c_jet_left
+        switch: s_jet_left
+    jet_right:
+        coil: c_jet_right
+        switch: s_jet_right
+    jet_down:
+        coil: c_jet_down
+        switch: s_jet_down
+
+flippers:
+    f_flipper_left:
+        main_coil: c_flipper_left_main
+        hold_coil: c_flipper_left_hold
+        activation_switch: s_flipper_left
+        #enable_events: machine_reset_phase_3
+    f_flipper_right:
+        main_coil: c_flipper_right_main
+        hold_coil: c_flipper_right_hold
+        activation_switch: s_flipper_right
+        #enable_events: machine_reset_phase_3
+    f_flipper_upper:
+        main_coil: c_flipper_upper_main
+        hold_coil: c_flipper_upper_hold
+        activation_switch: s_flipper_upper
+        #enable_events: machine_reset_phase_3        

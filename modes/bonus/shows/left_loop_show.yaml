@@ -1,0 +1,20 @@
+#show_version=5
+- duration: 1
+  lights:
+    l_left_loop: red    
+- duration: 1
+  lights:
+    l_left_loop: ff6600    
+- duration: 1
+  lights:
+    l_left_loop: ffcc00    
+- duration: 1
+  lights:
+    l_left_loop: lime    
+- duration: 1
+  lights:
+    l_left_loop: blue
+- duration: 1
+  lights:
+    l_left_loop: ff00aa
+    

@@ -1,0 +1,47 @@
+#config_version=5
+##! mode: lane_change
+mode:
+  start_events: start_mode_lane_change, ball_started
+  stop_events: stop_mode_lane_change, ball_will_end
+
+shots:
+  sh_left_outlane:
+    switch: s_left_outlane
+    profile: change_lane_profile
+    show_tokens:
+      led: l_left_outlane
+  sh_left_inlane:
+    switch: s_left_inlane
+    profile: change_lane_profile
+    show_tokens:
+      led: l_left_inlane
+  sh_right_inlane:
+    switch: s_right_inlane
+    profile: change_lane_profile
+    show_tokens:
+      led: l_right_inlane
+  sh_right_outlane:
+    switch: s_right_outlane
+    profile: change_lane_profile
+    show_tokens:
+      led: l_right_outlane
+
+shot_groups:
+  change_lane_group:
+    shots: sh_left_outlane, sh_left_inlane, sh_right_inlane, sh_right_outlane
+    reset_events: change_lane_group_complete
+    rotate_left_events: s_flipper_left_active
+    rotate_right_events: s_flipper_right_active
+
+shot_profiles:
+  change_lane_profile:
+    states:
+      - name: unlit  # step 1
+        show: off      
+      - name: lit  # step 3
+        show: on
+
+variable_player:
+  change_lane_group_complete:
+    score: 10000
+    bonus_multiplier: 1

@@ -1,0 +1,111 @@
+#config_version=5
+mode:
+    start_events: ball_started
+    priority: 100
+    
+variable_player:
+  s_sling_left_active:
+    score: 100
+  s_slingshot_right_active:
+    score: 100    
+  s_jet_left_active:
+    score: 50
+    jet_count: 1
+  s_jet_right_active:
+    score: 50
+    jet_count: 1
+  s_jet_down_active:
+    score: 50
+    jet_count: 1
+  left_loop_hit:
+    score: 100
+    loop_count: 1
+  right_loop_hit:
+    score: 100
+    loop_count: 1
+  upper_loop_hit:
+    score: 150
+    loop_count: 1
+  
+sequence_shots:
+  left_loop:
+    switch_sequence: s_left_loop, s_right_loop
+    sequence_timeout: 2s
+  left_ramp:
+    switch_sequence: s_left_ramp_start, s_left_ramp_end
+    sequence_timeout: 2s
+  right_ramp:
+    switch_sequence: s_right_ramp_start, s_right_ramp_end
+    sequence_timeout: 2s    
+  right_loop:
+    switch_sequence: s_right_loop, s_left_loop
+    sequence_timeout: 2s  
+  upper_loop:
+    switch_sequence: s_upper_loop, s_left_loop
+    sequence_timeout: 2s
+
+shots:
+  # sh_left_loop:
+  #   hit_events: left_loop_hit
+  #   #profile: three_way_profile
+  #   show_tokens:      
+  #     led: l_left_loop      
+  # sh_right_loop:
+  #   hit_events: right_loop_hit
+  #   #profile: three_way_profile
+  #   show_tokens:
+  #     led: l_right_loop
+  # sh_upper_loop:
+  #   hit_events: upper_loop_hit
+  #   #profile: three_way_profile
+  #   show_tokens:
+  #     led: l_upper_loop
+  sh_left_ramp:
+    hit_events: left_ramp_hit
+    profile: three_way_profile
+    show_tokens:
+      led: l_left_ramp
+  sh_right_ramp:
+    hit_events: right_ramp_hit
+    profile: three_way_profile
+    show_tokens:
+      led: l_right_ramp
+
+shot_profiles:  
+  three_way_profile:
+    states:
+      - name: unlit  # step 1
+        show: off
+      - name: flashing  # step 2
+        show: flash
+      - name: lit  # step 3
+        show_tokens: 
+          color: red        
+    loop: true
+
+slide_player:
+  mode_base_started:
+    widgets:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 100
+      - type: text
+        text: PLAYER (number)
+        y: 10
+        x: 10
+        font_size: 50
+        anchor_x: left
+        anchor_y: bottom
+      - type: text
+        text: BALL (ball)
+        y: 10
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 50
+      - type: text
+        text: 'Bumpers Count: (jet_count) Multiplicateur: (bonus_multiplier), loop:(loop_count)'
+        y: 40%
+     

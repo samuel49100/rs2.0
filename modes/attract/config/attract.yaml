@@ -1,0 +1,9 @@
+#config_version=5
+show_player:
+  mode_attract_started: 
+    attract_display_loop:
+      speed: 1
+    attract_light_show:
+      speed: 2
+    attract_rainbow_show:
+      speed: 3

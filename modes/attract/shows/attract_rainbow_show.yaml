@@ -1,0 +1,49 @@
+#show_version=5
+- duration: 1
+  lights:
+    l_left_loop: red
+    l_left_ramp: red
+    l_main_scope: ff0000
+    l_upper_loop: ff6600
+    l_right_ramp: ff6600
+    l_right_loop: ff6600
+- duration: 1
+  lights:
+    l_left_loop: ff6600
+    l_left_ramp: ff6600
+    l_main_scope: ff6600
+    l_upper_loop: ffcc00
+    l_right_ramp: ffcc00
+    l_right_loop: ffcc00
+- duration: 1
+  lights:
+    l_left_loop: ffcc00
+    l_left_ramp: ffcc00
+    l_main_scope: ffcc00
+    l_upper_loop: lime
+    l_right_ramp: lime
+    l_right_loop: lime
+- duration: 1
+  lights:
+    l_left_loop: lime
+    l_left_ramp: 00ff00
+    l_main_scope: 00ff00
+    l_upper_loop: blue
+    l_right_ramp: blue
+    l_right_loop: blue
+- duration: 1
+  lights:
+    l_left_loop: blue
+    l_left_ramp: 0000ff
+    l_main_scope: 0000ff
+    l_upper_loop: 0000ff
+    l_right_ramp: ff00aa
+    l_right_loop: ff00aa
+- duration: 1
+  lights:
+    l_left_loop: ff00aa
+    l_left_ramp: ff00aa
+    l_main_scope: ff00aa
+    l_upper_loop: red
+    l_right_ramp: red
+    l_right_loop: red
