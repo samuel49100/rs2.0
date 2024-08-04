@@ -1,2 +1,2 @@
-# my1strepo
-test my1strepo
+# rs 2.0
+new project
