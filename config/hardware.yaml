@@ -37,36 +37,36 @@ coils:
         number: 41
         default_pulse_ms: 20
 
-autofire_coils:
-    slingshot_left:
-        coil: c_sling_left
-        switch: s_sling_left
-    slingshot_right:
-        coil: c_slingshot_right
-        switch: s_slingshot_right  
-    jet_left:
-        coil: c_jet_left
-        switch: s_jet_left
-    jet_right:
-        coil: c_jet_right
-        switch: s_jet_right
-    jet_down:
-        coil: c_jet_down
-        switch: s_jet_down
+# autofire_coils:
+#     slingshot_left:
+#         coil: c_sling_left
+#         switch: s_left_sling
+#     slingshot_right:
+#         coil: c_slingshot_right
+#         switch: s_right_sling  
+#     jet_left:
+#         coil: c_jet_left
+#         switch: s_left_jet
+#     jet_right:
+#         coil: c_jet_right
+#         switch: s_right_jet
+#     jet_top:
+#         coil: s_top_jet
+#         switch: s_top_jet
 
-flippers:
-    f_flipper_left:
-        main_coil: c_flipper_left_main
-        hold_coil: c_flipper_left_hold
-        activation_switch: s_flipper_left
-        #enable_events: machine_reset_phase_3
-    f_flipper_right:
-        main_coil: c_flipper_right_main
-        hold_coil: c_flipper_right_hold
-        activation_switch: s_flipper_right
-        #enable_events: machine_reset_phase_3
-    f_flipper_upper:
-        main_coil: c_flipper_upper_main
-        hold_coil: c_flipper_upper_hold
-        activation_switch: s_flipper_upper
-        #enable_events: machine_reset_phase_3        
+# flippers:
+#     f_flipper_left:
+#         main_coil: c_flipper_left_main
+#         hold_coil: c_flipper_left_hold
+#         activation_switch: s_flipper_left
+#         #enable_events: machine_reset_phase_3
+#     f_flipper_right:
+#         main_coil: c_flipper_right_main
+#         hold_coil: c_flipper_right_hold
+#         activation_switch: s_flipper_right
+#         #enable_events: machine_reset_phase_3
+#     f_flipper_upper:
+#         main_coil: c_flipper_upper_main
+#         hold_coil: c_flipper_upper_hold
+#         activation_switch: s_flipper_upper
+#         #enable_events: machine_reset_phase_3        

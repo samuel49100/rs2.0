@@ -1,80 +1,168 @@
 #config_version=5
     
 switches:
-    s_flipper_left:
-        number: 10
-        tags: left_flipper
-    s_flipper_right:
+# SWITCH MATRIX
+    s_ted_mouth:
         number: 11
-        tags: right_flipper
-    s_flipper_upper:
+    s_slam_tilt:
+        number: 21
+    s_skillshot_tower:
+        number: 31
+    s_trough_jam:
+        number: 41
+    s_spinner:
+        number: 51
+    s_left_sling:
+        number: 61
+    s_right_ramp_enter:
+        number: 71
+    s_white_standup:
+        number: 81
+    s_dozer_down:
         number: 12
-        tags: upper_flipper
-    s_sling_left:
-        number: 13
-        tags: left_slingshot
-    s_slingshot_right:
-        number: 14
-        tags: right_slingshot
-    s_jet_left:
-        number: 15
-        tags: left_bumper
-    s_jet_right:
-        number: 16
-        tags: right_bumper
-    s_jet_down:
-        number: 17
-        tags: down_bumper
+    s_coindoor_closed:
+        number: 22
+    s_skillshot_upper:
+        number: 32
     s_trough1:
         number: 42
-        type: NC
+    s_lockup_1:
+        number: 52
+    s_right_sling:
+        number: 62
+    s_right_ramp_exit_center:
+        number: 72
+    s_red_standup:
+        number: 82
+    s_start_button:
+        number: 13
+    s_buyin_button:
+        number: 23
+    s_right_shooter:
+        number: 33
     s_trough2:
         number: 43
-        type: NC
+    s_lockup_2:
+        number: 53
+    s_left_jet:
+        number: 63
+    s_flying_rocks_5xblast:
+        number: 73
+    s_yellow_standup:
+        number: 83
+    s_plumni_bob_tilt:
+        number: 14
+    s_always_closed:
+        number: 24
+    s_radio_3bank:
+        number: 34
     s_trough3:
         number: 44
-        type: NC
+    s_lock_kickout:
+        number: 54
+    s_top_jet:
+        number: 64
+    s_flying_radioriot:
+        number: 74
+    s_orange_standup:
+        number: 84
+    s_dozer_up:
+        number: 15
+    s_reds_mouth:
+        number: 25
+    s_red_standup_upper:
+        number: 35
     s_trough4:
         number: 45
-        type: NC
-    s_trough_jam:
-        number: 48
-        type: NC
-    s_plunger:
-        number: 49
-    s_start:
-        number: 50
-        tags: start
-    s_right_inlane:
-        number: 51
-        tags: playfield_active
-    s_left_inlane:
-        number: 52
-        tags: playfield_active
-    s_right_outlane:
-        number: 53
-        tags: playfield_active
-    s_left_outlane:
-        number: 54
-        tags: playfield_active
-    s_right_loop:
+    s_right_ramp_exit_left:
         number: 55
-        tags: playfield_active
-    s_left_loop:
+    s_right_jet:
+        number: 65
+    s_flying_rocks_extraball:
+        number: 75
+    s_middle_left_flipper_top:
+        number: 85
+    s_right_outlane:
+        number: 16
+    s_left_outlane:
+        number: 26
+    s_red_standup_lower:
+        number: 36
+    s_right_loop_enter:
+        number: 46
+    s_left_ramp_exit:
         number: 56
-        tags: playfield_active
-    s_right_ramp_start:
+    s_not_used_66:
+        number: 66
+    s_flying_rocks_top:
+        number: 76
+    s_middle_left_flipper_bottom:
+        number: 86
+    s_right_inlane_2:
+        number: 17
+    s_left_inlane:
+        number: 27
+    s_hit_red:
+        number: 37
+    s_hit_bulldozer:
+        number: 47
+    s_left_ramp_enter:
         number: 57
-        tags: playfield_active
-    s_left_ramp_start:
+    s_not_used_67:
+        number: 67
+    s_under_blastzone:
+        number: 77
+    s_not_used_87:
+        number: 87
+    s_right_inlane_1:
+        number: 18
+    s_blastzone_3bank:
+        number: 28
+    s_right_loop_exit:
+        number: 38
+    s_hit_ted:
+        number: 48
+    s_left_shooter:
         number: 58
-        tags: playfield_active
-    s_right_ramp_end:
-        number: 59
-        tags: playfield_active
-    s_left_ramp_end:
-        number: 60
-        tags: playfield_active
-    s_upper_loop:
-        number: 61
-        tags: playfield_active
+    s_not_used_68:
+        number: 68
+    s_start_city:
+        number: 78
+    s_not_used_88:
+        number: 88
+
+# Dedicated grounded switches
+    s_leftcoin_chute:
+        number: 801
+    s_centercoin_chute:
+        number: 802
+    s_rightcoin_chute:
+        number: 803
+    s_4thcoin_chute:
+        number: 804
+    s_service_credit:
+        number: 805
+    s_service_voldown:
+        number: 806
+    s_service_volup:
+        number: 807
+    s_service_enter:
+        number: 808
+
+# Flipper grounded switches
+    s_lower_right_eos:
+        number: 901
+    s_lower_right_opto:
+        number: 902
+    s_lower_left_eos:
+        number: 903
+    s_lower_left_opto:
+        number: 904
+    s_upper_left_eos:
+        number: 905
+    s_upper_left_opto:
+        number: 906
+    s_middle_left_eos:
+        number: 907
+    s_middle_left_opto:
+        number: 908

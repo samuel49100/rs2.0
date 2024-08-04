@@ -15,7 +15,7 @@ lights:
         number: 61
     l_bonus_6x:
         number: 71
-    l_flying_rocks:
+    l_flying_rocks_5xblast:
         number: 81
     l_denver:
         number: 12
